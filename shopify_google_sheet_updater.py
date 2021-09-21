@@ -31,7 +31,7 @@ SPREADSHEET_RANGE = # Sheet name as a string
 
 ## Using PYTZ to set the "start-date"
 TIME_FORMAT = '%Y-%m-%dT%H:%M:%S%z'
-PST = pytz.timezone('America/Vancouver') #modify your datetime timezone as needed
+PST = pytz.timezone('Asia/Kolkata') #modify your datetime timezone as needed
 yesterday = datetime.now() - timedelta(1)
 local_time = PST.localize(yesterday)
 yesterday_timestamp = local_time.strftime(TIME_FORMAT)
